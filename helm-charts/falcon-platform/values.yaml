@@ -58,7 +58,7 @@ falcon-image-analyzer:
   enabled: true
   namespaceOverride: falcon-image-analyzer
   # Required: CrowdStrike CID
-global.falcon.cid: "YOUR-CID-HERE"
+global.falcon.cid: "5DDB0407BEF249C19C7A975F17979A1F-90"
 
 # If using existing secret:
 global.falconSecret.enabled: true
