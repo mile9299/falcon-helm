@@ -57,3 +57,19 @@ falcon-kac:
 falcon-image-analyzer:
   enabled: true
   namespaceOverride: falcon-image-analyzer
+  # Required: CrowdStrike CID
+global.falcon.cid: "YOUR-CID-HERE"
+
+# If using existing secret:
+global.falconSecret.enabled: true
+global.falconSecret.secretName: "falcon-credentials"
+
+# Component toggles (adjust as needed):
+falcon-sensor.enabled: true
+falcon-kac.enabled: true
+falcon-image-analyzer.enabled: true
+
+# Namespace overrides (if different from default):
+falcon-sensor.namespaceOverride: "falcon-system"
+falcon-kac.namespaceOverride: "falcon-kac"
+falcon-image-analyzer.namespaceOverride: "falcon-image-analyzer"
